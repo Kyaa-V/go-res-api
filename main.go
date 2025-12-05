@@ -1,14 +1,17 @@
 package main
 
 import (
-	"application"
 	"context"
 	"fmt"
+
+	"github.com/Kyaa-V/go-res-api/application"
 )
 
-func main(){
+func main() {
+	fmt.Println("application setup")
 	app := application.New()
 
+	fmt.Println("starting aplication")
 	err := app.Start(context.TODO())
 
 	if err != nil {
